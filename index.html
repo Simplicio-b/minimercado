@@ -7,80 +7,159 @@
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>MINIMERCADO</title>
+    <!-- <style>
+        .show > section:not(:target) {
+            display: none;
+        }
+    </style> -->
 </head>
 
 <body>
-    <header>
+    <header class="text-center py-3 bg-light">
         <h1>MiniMercado 01</h1>
         <nav>
-            <ul>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="#produtos" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="#login" class="nav-link">Entrar</a></li>
             </ul>
         </nav>
     </header>
     <hr>
-    <main>
+    <main class="show container">
+
         <!-- Produtos -->
-        <section id="produtos">
-            <h2>Produtos</h2>
+        <section id="produtos" class="my-5">
+            <h2 class="text-center mb-4">Produtos</h2>
 
             <!-- Categoria: Frutas e Verduras -->
-            <h3>Frutas e Verduras</h3>
-            <article>
-                <img src="assets/img/image.png" alt="Maçã" width="150">
-                <p>Maçã Vermelha</p>
-                <p>R$ 4,99/kg</p>
-            </article>
-            <article>
-                <img src="assets/img/image.png" alt="Alface" width="150">
-                <p>Alface Fresca</p>
-                <p>R$ 2,99/unidade</p>
-            </article>
+            <h3 class="mb-3">Frutas e Verduras</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="assets/img/image.png" alt="Maçã" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Maçã Vermelha</h5>
+                            <p class="card-text">R$ 4,99/kg</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="assets/img/image.png" alt="Alface" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Alface Fresca</h5>
+                            <p class="card-text">R$ 2,99/unidade</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="assets/img/image.png" alt="Alface" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Alface Fresca</h5>
+                            <p class="card-text">R$ 2,99/unidade</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
 
             <!-- Categoria: Produtos Alimentícios Não Perecíveis -->
-            <h3>Produtos Alimentícios Não Perecíveis</h3>
-            <article>
-                <img src="assets/img/image.png" alt="Arroz" width="150">
-                <p>Arroz Branco - 5kg</p>
-                <p>R$ 19,99</p>
-            </article>
-            <article>
-                <img src="assets/img/image.png" alt="Feijão" width="150">
-                <p>Feijão Carioca - 1kg</p>
-                <p>R$ 8,99</p>
-            </article>
+            <h3 class="mt-5 mb-3">Produtos Alimentícios Não Perecíveis</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="assets/img/image.png" alt="Arroz" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Arroz Branco - 5kg</h5>
+                            <p class="card-text">R$ 19,99</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="assets/img/image.png" alt="Feijão" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Feijão Carioca - 1kg</h5>
+                            <p class="card-text">R$ 8,99</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="assets/img/image.png" alt="Feijão" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Feijão Carioca - 1kg</h5>
+                            <p class="card-text">R$ 8,99</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
 
             <!-- Categoria: Produtos de Higiene e Limpeza -->
-            <h3>Produtos de Higiene e Limpeza</h3>
-            <article>
-                <img src="assets/img/image.png" alt="Detergente" width="150">
-                <p>Detergente Líquido</p>
-                <p>R$ 2,99</p>
-            </article>
-            <article>
-                <img src="assets/img/image.png" alt="Papel Higiênico" width="150">
-                <p>Papel Higiênico - 4 rolos</p>
-                <p>R$ 6,99</p>
-            </article>
+            <h3 class="mt-5 mb-3">Produtos de Higiene e Limpeza</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="assets/img/image.png" alt="Detergente" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Detergente Líquido</h5>
+                            <p class="card-text">R$ 2,99</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="assets/img/image.png" alt="Papel Higiênico" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Papel Higiênico - 4 rolos</h5>
+                            <p class="card-text">R$ 6,99</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="assets/img/image.png" alt="Papel Higiênico" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Papel Higiênico - 4 rolos</h5>
+                            <p class="card-text">R$ 6,99</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <hr>
 
         <!-- Serviços -->
-        <section id="servicos">
-            <h2>Serviços</h2>
-            <article>
-                <h3>Retirada no Local</h3>
-                <p>Compre online e retire no minimercado.</p>
-                <p>Custo: Grátis</p>
-            </article>
-            <article>
-                <h3>Tele-Entrega</h3>
-                <p>Receba sua compra diretamente em sua casa.</p>
-                <p>Custo: R$ 05,00</p>
-            </article>
+        <section id="servicos" class="my-5">
+            <h2 class="text-center mb-4">Serviços</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Retirada no Local</h3>
+                            <p class="card-text">Compre online e retire no minimercado.</p>
+                            <p class="card-text">Custo: Grátis</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Tele-Entrega</h3>
+                            <p class="card-text">Receba sua compra diretamente em sua casa.</p>
+                            <p class="card-text">Custo: R$ 05,00</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section id="login">
@@ -145,21 +224,66 @@
             </div>
 
         </section>
+
+        <section id="contato" class="my-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Entre em Contato</h2>
+                <div class="row gy-4">
+                    <!-- Formulário de Contato -->
+                    <div class="col-md-6">
+                        <h3>Envie uma Mensagem</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" id="nome" class="form-control" placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email-contato" class="form-label">E-mail</label>
+                                <input type="email" id="email-contato" class="form-control" placeholder="Digite seu e-mail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea id="mensagem" rows="5" class="form-control" placeholder="Escreva sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                        </form>
+                    </div>
+        
+                    <!-- Informações de Contato -->
+                    <div class="col-md-6">
+                        <h3>Informações de Contato</h3>
+                        <p class="mb-2"><strong>Endereço:</strong> Rua das Compras, 123, Centro, São Paulo - SP</p>
+                        <p class="mb-2"><strong>Telefone:</strong> (11) 1111-0000</p>
+                        <p class="mb-2"><strong>E-mail:</strong> contato@minimercado01.com.br</p>
+                        <p class="mb-2"><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 8h às 18h</p>
+                        <div class="mt-4">
+                            <h4>Siga-nos nas redes sociais:</h4>
+                            <a href="#" class="btn btn-outline-primary me-2">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                            <a href="#" class="btn btn-outline-danger">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
     <hr>
 
-    <footer>
+    <footer class="text-center py-3 bg-light">
         <p>MiniMercado 01 &copy; 2024</p>
         <p>Contato: suporte@minimercado01.com.br | Telefone: (11) 1111-0000</p>
         <nav>
-            <ul>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="#produtos" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
