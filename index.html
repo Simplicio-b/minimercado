@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ptBR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>MINIMERCADO</title>
 </head>
+
 <body>
     <header>
         <h1>MiniMercado 01</h1>
@@ -22,7 +25,7 @@
         <!-- Produtos -->
         <section id="produtos">
             <h2>Produtos</h2>
-            
+
             <!-- Categoria: Frutas e Verduras -->
             <h3>Frutas e Verduras</h3>
             <article>
@@ -35,7 +38,7 @@
                 <p>Alface Fresca</p>
                 <p>R$ 2,99/unidade</p>
             </article>
-    
+
             <!-- Categoria: Produtos Alimentícios Não Perecíveis -->
             <h3>Produtos Alimentícios Não Perecíveis</h3>
             <article>
@@ -48,7 +51,7 @@
                 <p>Feijão Carioca - 1kg</p>
                 <p>R$ 8,99</p>
             </article>
-    
+
             <!-- Categoria: Produtos de Higiene e Limpeza -->
             <h3>Produtos de Higiene e Limpeza</h3>
             <article>
@@ -62,9 +65,9 @@
                 <p>R$ 6,99</p>
             </article>
         </section>
-    
+
         <hr>
-    
+
         <!-- Serviços -->
         <section id="servicos">
             <h2>Serviços</h2>
@@ -79,9 +82,72 @@
                 <p>Custo: R$ 05,00</p>
             </article>
         </section>
+
+        <section id="login">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <!-- Cabeçalho -->
+                    <div class="col-12 text-center mb-4">
+                        <h1 class="mb-3">Bem-vindo ao MiniMercado</h1>
+                        <p class="text-muted">Acesse sua conta ou crie uma nova</p>
+                    </div>
+
+                    <!-- Formulários -->
+                    <div class="col-lg-10">
+                        <div class="row gy-4">
+                            <!-- Formulário 1: Já sou cliente -->
+                            <div class="col-md-6">
+                                <h2>Já sou cliente</h2>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">E-mail</label>
+                                        <input type="email" id="email" class="form-control"
+                                            placeholder="Digite seu e-mail" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Senha</label>
+                                        <input type="password" id="password" class="form-control"
+                                            placeholder="Digite sua senha" required>
+                                    </div>
+                                    <div class="mb-3 text-end">
+                                        <a href="#" class="text-decoration-none">Esqueci minha senha</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Acessar Conta</button>
+                                </form>
+                            </div>
+
+                            <!-- Formulário 2: Criar Conta -->
+                            <div class="col-md-6">
+                                <h2>Criar conta</h2>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="new-email" class="form-label">E-mail</label>
+                                        <input type="email" id="new-email" class="form-control"
+                                            placeholder="Digite seu e-mail" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-success w-100">Prosseguir</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opções de Login via Redes Sociais -->
+                    <div class="col-lg-10 text-center mt-4">
+                        <p class="text-muted">Ou acesse com:</p>
+                        <button class="btn btn-outline-dark me-2">
+                            <img src="google-icon.png" alt="Google" width="20" class="me-2">Google
+                        </button>
+                        <button class="btn btn-outline-dark">
+                            <img src="facebook-icon.png" alt="Facebook" width="20" class="me-2">Facebook
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
     <hr>
-    
+
     <footer>
         <p>MiniMercado 01 &copy; 2024</p>
         <p>Contato: suporte@minimercado01.com.br | Telefone: (11) 1111-0000</p>
@@ -93,6 +159,9 @@
             </ul>
         </nav>
     </footer>
-    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
