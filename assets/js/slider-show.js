@@ -40,13 +40,30 @@ setInterval(() => {
     plusSlides(slideIndex)
 }, 2400);
 
-// (function hiddenSlides() {
-//     const hidden = document.querySelector('slideshow-container')
-//     const hash = window.location.hash
-//     console.log('hiddenSlides')
-//     console.log(window.location.hash)
+function hiddenSlides() {
+    const hidden = document.querySelector('#slideshow-container')
+    const hash = window.location.hash
 
-//     if(hash !== "#produtos" || hash !== "#produtos") {
-//         console.log(hidden)
-//     }
-// })()
+    if(hash !== "#produtos") {
+        hidden.style.display = 'none';
+    } else {
+        hidden.style.display = 'block';
+    }
+}
+
+var observer = new MutationObserver( handleMutationObserver );
+var config = { childList: true, attributes: true, subtree: true  };
+var target = document.querySelector( 'body' );
+  
+function handleMutationObserver( mutations ) {
+    hiddenSlides()
+    mutations.forEach(function(mutation) {
+        if(mutation.type == 'childList') {
+            // hiddenSlides()
+        }
+  });
+  
+}
+
+observer.observe( target, config );
+hiddenSlides() 
