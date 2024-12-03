@@ -8,12 +8,8 @@
     <link rel="stylesheet" href="assets/css/slider-show.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <title>MINIMERCADO</title>
-    <style>
-        .show>section:not(:target) {
-            display: none;
-        }
-    </style>
 </head>
 
 <body onload="redirectURIById('#produtos')">
@@ -78,7 +74,7 @@
         </nav>
     </header>
     <!-- Slideshow container -->
-    <div class="mt-5">
+    <div class="mt-5" id="slideshow-container">
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
@@ -128,118 +124,20 @@
         <section id="produtos" class="my-5">
             <h2 class="text-center mb-4">Produtos</h2>
 
-            <!-- Categoria: Frutas e Verduras -->
-            <h3 class="mb-3">Frutas e Verduras</h3>
-            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-                <div class="col">
-                    <article class="card h-100">
-                        <img src="assets/img/image.png" alt="Maçã" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Maçã Vermelha</h5>
-                            <p class="card-text">R$ 4,99/kg</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col">
-                    <article class="card h-100 shadow-sm">
-                        <img src="assets/img/image.png" class="card-img-top" alt="Maçã Vermelha">
-                        <div class="card-body">
-                            <h5 class="card-title">Maçã Vermelha</h5>
-                            <p class="card-text text-muted">Maçãs frescas e selecionadas. Perfeitas para um lanche
-                                saudável.</p>
-                            <p class="card-text fw-bold">R$ 4,99/kg</p>
-                            <a href="#produto-unico" class="btn btn-primary w-100">Adicionar ao Carrinho</a>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col">
-                    <article class="card h-100">
-                        <img src="assets/img/image.png" alt="Alface" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Alface Fresca</h5>
-                            <p class="card-text">R$ 2,99/unidade</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col">
-                    <article class="card h-100">
-                        <img src="assets/img/image.png" alt="Alface" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Alface Fresca</h5>
-                            <p class="card-text">R$ 2,99/unidade</p>
-                        </div>
-                    </article>
-                </div>
+            <div area-view="produtos-frutas">
+                <!-- Categoria: Frutas e Verduras -->
+                <h3 class="mb-3">Frutas e Verduras</h3>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4" id="produtos-frutas"></div>
             </div>
-
-            <!-- Categoria: Produtos Alimentícios Não Perecíveis -->
-            <h3 class="mt-5 mb-3">Produtos Alimentícios Não Perecíveis</h3>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <article class="card h-100">
-                        <img src="assets/img/image.png" alt="Arroz" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Arroz Branco - 5kg</h5>
-                            <p class="card-text">R$ 19,99</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col">
-                    <article class="card h-100">
-                        <img src="assets/img/image.png" alt="Feijão" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Feijão Carioca - 1kg</h5>
-                            <p class="card-text">R$ 8,99</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col">
-                    <article class="card h-100">
-                        <img src="assets/img/image.png" alt="Feijão" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Feijão Carioca - 1kg</h5>
-                            <p class="card-text">R$ 8,99</p>
-                        </div>
-                    </article>
-                </div>
+            <div area-view="produtos-nao-pereciveis">
+                <!-- Categoria: Produtos Alimentícios Não Perecíveis -->
+                <h3 class="mt-5 mb-3">Produtos Alimentícios Não Perecíveis</h3>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4" id="produtos-nao-pereciveis"></div>
             </div>
-
-            <!-- Categoria: Produtos de Higiene e Limpeza -->
-            <h3 class="mt-5 mb-3">Produtos de Higiene e Limpeza</h3>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <article class="card h-100">
-                        <img src="assets/img/image.png" alt="Detergente" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Detergente Líquido</h5>
-                            <p class="card-text">R$ 2,99</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col">
-                    <article class="card h-100">
-                        <img src="assets/img/image.png" alt="Papel Higiênico" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Papel Higiênico - 4 rolos</h5>
-                            <p class="card-text">R$ 6,99</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col">
-                    <article class="card h-100">
-                        <img src="assets/img/image.png" alt="Papel Higiênico" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Papel Higiênico - 4 rolos</h5>
-                            <p class="card-text">R$ 6,99</p>
-                        </div>
-                    </article>
-                </div>
+            <div area-view="produtos-higiene-limpeza">
+                <!-- Categoria: Produtos de Higiene e Limpeza -->
+                <h3 class="mt-5 mb-3">Produtos de Higiene e Limpeza</h3>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4" id="produtos-higiene-limpeza"></div>
             </div>
         </section>
 
@@ -268,57 +166,7 @@
             </div>
         </section>
 
-        <section id="produto-unico" class="py-5">
-            <div class="container">
-                <div class="row g-5">
-                    <!-- Imagem do Produto -->
-                    <div class="col-md-6">
-                        <div class="product-image">
-                            <img src="assets/img/image.png" class="img-fluid rounded" alt="Maçã Vermelha">
-                        </div>
-                    </div>
-
-                    <!-- Detalhes do Produto -->
-                    <div class="col-md-6">
-                        <h2 class="mb-3">Maçã Vermelha</h2>
-                        <p class="text-muted">Fresca, saborosa e rica em nutrientes. Perfeita para quem busca saúde e
-                            sabor em um só produto.</p>
-                        <ul class="list-unstyled mb-4">
-                            <li><strong>Categoria:</strong> Frutas e Verduras</li>
-                            <li><strong>Disponibilidade:</strong> Em estoque</li>
-                            <li><strong>Unidade:</strong> Vendido por kg</li>
-                        </ul>
-                        <p class="h4 fw-bold mb-3">R$ 4,99/kg</p>
-
-                        <!-- Seletor de Quantidade -->
-                        <div class="mb-4">
-                            <label for="quantidade" class="form-label">Quantidade:</label>
-                            <div class="input-group" style="max-width: 200px;">
-                                <button class="btn btn-outline-secondary" type="button">-</button>
-                                <input type="number" id="quantidade" class="form-control text-center" value="1" min="1">
-                                <button class="btn btn-outline-secondary" type="button">+</button>
-                            </div>
-                        </div>
-
-                        <!-- Botões -->
-                        <div class="d-flex flex-column flex-sm-row gap-3">
-                            <button class="btn btn-primary w-100">Adicionar ao Carrinho</button>
-                            <a href="#produtos" class="btn btn-outline-secondary w-100">Voltar à Lista de Produtos</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Descrição Adicional -->
-                <div class="mt-5">
-                    <h3>Descrição Completa</h3>
-                    <p>
-                        Nossa maçã vermelha é cultivada por produtores locais, com técnicas que respeitam o meio
-                        ambiente
-                        e garantem a máxima qualidade. Ideal para consumo in natura, em saladas de frutas ou sobremesas.
-                    </p>
-                </div>
-            </div>
-        </section>
+        <section id="produto-unico" class="py-5"></section>
 
         <section id="carrinho" class="py-5">
             <div class="container">
@@ -504,7 +352,8 @@
                 <p class="lead my-4">Sua compra foi realizada com sucesso. Um e-mail com os detalhes da transação foi
                     enviado para você.</p>
                 <p>Se tiver alguma dúvida, entre em contato com nosso suporte através do e-mail
-                    <strong>suporte@minimercado.com</strong> ou pelo telefone <strong>(11) 1234-5678</strong>.</p>
+                    <strong>suporte@minimercado.com</strong> ou pelo telefone <strong>(11) 1234-5678</strong>.
+                </p>
                 <a href="#produtos" class="btn btn-primary mt-3">Voltar à Página Inicial</a>
             </div>
         </section>
@@ -852,6 +701,7 @@
     <script src="assets/js/slider-show.js"></script>
     <script src="assets/js/utils.js"></script>
     <script src="assets/js/checkout.js"> </script>
+    <script src="assets/js/datas-products.js"></script>
 </body>
 
 </html>
