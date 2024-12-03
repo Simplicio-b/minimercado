@@ -17,7 +17,47 @@
 
 <body>
     <header class="text-center py-3 bg-light">
-        <h1>MiniMercado 01</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar scroll</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Link</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- <h1>MiniMercado 01</h1>
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a href="#produtos" class="nav-link">Produtos</a></li>
@@ -25,28 +65,29 @@
                 <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
                 <li class="nav-item"><a href="#login" class="nav-link">Entrar</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
-    <hr>
 
     <!-- Slideshow container -->
-    <div>
+    <div class="mt-5">
+        <!-- Slideshow container -->
         <div class="slideshow-container">
 
+            <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
                 <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
                 <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
+                <div class="numbertext">3 / 4</div>
                 <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
                 <div class="text">Caption Four</div>
             </div>
@@ -57,14 +98,13 @@
                 <div class="text">Caption Three</div>
             </div>
 
-
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
 
+        <!-- The dots/circles -->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -330,42 +370,49 @@
                         </div>
                         <div class="col-md-6">
                             <label for="sobrenome" class="form-label">Sobrenome</label>
-                            <input type="text" id="sobrenome" class="form-control" placeholder="Digite seu sobrenome" required>
+                            <input type="text" id="sobrenome" class="form-control" placeholder="Digite seu sobrenome"
+                                required>
                         </div>
-        
+
                         <!-- Sexo -->
                         <div class="col-md-6">
                             <label class="form-label">Sexo</label>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino" required>
+                                <input class="form-check-input" type="radio" name="sexo" id="masculino"
+                                    value="masculino" required>
                                 <label class="form-check-label" for="masculino">Masculino</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino" required>
+                                <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino"
+                                    required>
                                 <label class="form-check-label" for="feminino">Feminino</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sexo" id="outro" value="outro" required>
+                                <input class="form-check-input" type="radio" name="sexo" id="outro" value="outro"
+                                    required>
                                 <label class="form-check-label" for="outro">Outro</label>
                             </div>
                         </div>
-        
+
                         <!-- Data de Nascimento -->
                         <div class="col-md-6">
                             <label class="form-label">Data de Nascimento</label>
                             <div class="row">
                                 <div class="col-4">
-                                    <input type="number" class="form-control" placeholder="Dia" min="1" max="31" required>
+                                    <input type="number" class="form-control" placeholder="Dia" min="1" max="31"
+                                        required>
                                 </div>
                                 <div class="col-4">
-                                    <input type="number" class="form-control" placeholder="Mês" min="1" max="12" required>
+                                    <input type="number" class="form-control" placeholder="Mês" min="1" max="12"
+                                        required>
                                 </div>
                                 <div class="col-4">
-                                    <input type="number" class="form-control" placeholder="Ano" min="1900" max="2024" required>
+                                    <input type="number" class="form-control" placeholder="Ano" min="1900" max="2024"
+                                        required>
                                 </div>
                             </div>
                         </div>
-        
+
                         <!-- CPF e Telefone -->
                         <div class="col-md-6">
                             <label for="cpf" class="form-label">CPF</label>
@@ -373,9 +420,10 @@
                         </div>
                         <div class="col-md-6">
                             <label for="telefone" class="form-label">Telefone</label>
-                            <input type="text" id="telefone" class="form-control" placeholder="(00) 00000-0000" required>
+                            <input type="text" id="telefone" class="form-control" placeholder="(00) 00000-0000"
+                                required>
                         </div>
-        
+
                         <!-- Endereço -->
                         <div class="col-md-6">
                             <label for="cep" class="form-label">CEP</label>
@@ -383,7 +431,8 @@
                         </div>
                         <div class="col-md-6">
                             <label for="endereco" class="form-label">Endereço</label>
-                            <input type="text" id="endereco" class="form-control" placeholder="Digite seu endereço" required>
+                            <input type="text" id="endereco" class="form-control" placeholder="Digite seu endereço"
+                                required>
                         </div>
                         <div class="col-md-4">
                             <label for="numero" class="form-label">Número</label>
@@ -412,14 +461,14 @@
                             <input type="text" id="cidade" class="form-control" placeholder="Cidade" required>
                         </div>
                     </div>
-        
+
                     <!-- Botão de Enviar -->
                     <div class="text-center mt-4">
                         <button type="submit" class="btn btn-primary w-50">Criar Conta</button>
                     </div>
                 </form>
             </div>
-        </section>        
+        </section>
     </main>
     <hr>
 
