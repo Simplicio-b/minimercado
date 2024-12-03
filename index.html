@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>MINIMERCADO</title>
     <style>
-        .show > section:not(:target) {
+        .show>section:not(:target) {
             display: none;
         }
     </style>
@@ -50,9 +50,10 @@
                             <!-- <a class="nav-link disabled" aria-disabled="true">Link</a> -->
                             <button type="button" class="nav-link position-relative">
                                 Link
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                  99+
-                                  <span class="visually-hidden">unread messages</span>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
                                 </span>
                             </button>
                         </li>
@@ -144,7 +145,8 @@
                         <img src="assets/img/image.png" class="card-img-top" alt="Maçã Vermelha">
                         <div class="card-body">
                             <h5 class="card-title">Maçã Vermelha</h5>
-                            <p class="card-text text-muted">Maçãs frescas e selecionadas. Perfeitas para um lanche saudável.</p>
+                            <p class="card-text text-muted">Maçãs frescas e selecionadas. Perfeitas para um lanche
+                                saudável.</p>
                             <p class="card-text fw-bold">R$ 4,99/kg</p>
                             <a href="#produto-unico" class="btn btn-primary w-100">Adicionar ao Carrinho</a>
                         </div>
@@ -274,18 +276,19 @@
                             <img src="assets/img/image.png" class="img-fluid rounded" alt="Maçã Vermelha">
                         </div>
                     </div>
-        
+
                     <!-- Detalhes do Produto -->
                     <div class="col-md-6">
                         <h2 class="mb-3">Maçã Vermelha</h2>
-                        <p class="text-muted">Fresca, saborosa e rica em nutrientes. Perfeita para quem busca saúde e sabor em um só produto.</p>
+                        <p class="text-muted">Fresca, saborosa e rica em nutrientes. Perfeita para quem busca saúde e
+                            sabor em um só produto.</p>
                         <ul class="list-unstyled mb-4">
                             <li><strong>Categoria:</strong> Frutas e Verduras</li>
                             <li><strong>Disponibilidade:</strong> Em estoque</li>
                             <li><strong>Unidade:</strong> Vendido por kg</li>
                         </ul>
                         <p class="h4 fw-bold mb-3">R$ 4,99/kg</p>
-        
+
                         <!-- Seletor de Quantidade -->
                         <div class="mb-4">
                             <label for="quantidade" class="form-label">Quantidade:</label>
@@ -295,7 +298,7 @@
                                 <button class="btn btn-outline-secondary" type="button">+</button>
                             </div>
                         </div>
-        
+
                         <!-- Botões -->
                         <div class="d-flex flex-column flex-sm-row gap-3">
                             <button class="btn btn-primary w-100">Adicionar ao Carrinho</button>
@@ -303,17 +306,196 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Descrição Adicional -->
                 <div class="mt-5">
                     <h3>Descrição Completa</h3>
                     <p>
-                        Nossa maçã vermelha é cultivada por produtores locais, com técnicas que respeitam o meio ambiente
+                        Nossa maçã vermelha é cultivada por produtores locais, com técnicas que respeitam o meio
+                        ambiente
                         e garantem a máxima qualidade. Ideal para consumo in natura, em saladas de frutas ou sobremesas.
                     </p>
                 </div>
             </div>
-        </section>        
+        </section>
+
+        <section id="carrinho" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">Seu Carrinho</h2>
+
+                <!-- Carrinho de Compras -->
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Produto</th>
+                                <th scope="col">Preço</th>
+                                <th scope="col">Quantidade</th>
+                                <th scope="col">Subtotal</th>
+                                <th scope="col">Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Produto 1 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/img/image.png" alt="Maçã Vermelha" width="100" class="me-3">
+                                        <span>Maçã Vermelha</span>
+                                    </div>
+                                </td>
+                                <td>R$ 4,99/kg</td>
+                                <td>
+                                    <div class="input-group" style="max-width: 150px;">
+                                        <button class="btn btn-outline-secondary" type="button">-</button>
+                                        <input type="number" class="form-control text-center" value="2" min="1">
+                                        <button class="btn btn-outline-secondary" type="button">+</button>
+                                    </div>
+                                </td>
+                                <td>R$ 9,98</td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm">Remover</button>
+                                </td>
+                            </tr>
+
+                            <!-- Produto 2 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/img/image.png" alt="Arroz Branco" width="100" class="me-3">
+                                        <span>Arroz Branco - 5kg</span>
+                                    </div>
+                                </td>
+                                <td>R$ 19,99</td>
+                                <td>
+                                    <div class="input-group" style="max-width: 150px;">
+                                        <button class="btn btn-outline-secondary" type="button">-</button>
+                                        <input type="number" class="form-control text-center" value="1" min="1">
+                                        <button class="btn btn-outline-secondary" type="button">+</button>
+                                    </div>
+                                </td>
+                                <td>R$ 19,99</td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm">Remover</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Resumo do Carrinho -->
+                <div class="d-flex justify-content-between mt-4">
+                    <h4>Total do Carrinho:</h4>
+                    <p class="h4 fw-bold">R$ 29,97</p>
+                </div>
+
+                <!-- Botões -->
+                <div class="d-flex justify-content-between mt-4">
+                    <a href="#produtos" class="btn btn-outline-secondary">Continuar Comprando</a>
+                    <a href="#checkout" class="btn btn-primary">Finalizar Compra</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="checkout" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">Checkout</h2>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <h3>Escolha o Método de Pagamento</h3>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="cartao" name="pagamento"
+                                    value="cartao">
+                                <label class="form-check-label" for="cartao">Cartão de Crédito</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="pix" name="pagamento" value="pix">
+                                <label class="form-check-label" for="pix">Pix</label>
+                            </div>
+                        </div>
+
+                        <!-- Formulário para Cartão de Crédito -->
+                        <div id="form-cartao" class="d-none">
+                            <h4>Informações do Cartão</h4>
+                            <div class="mb-3">
+                                <label for="numero-cartao" class="form-label">Número do Cartão</label>
+                                <input type="text" id="numero-cartao" class="form-control"
+                                    placeholder="Número do cartão" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validade-cartao" class="form-label">Validade</label>
+                                <input type="text" id="validade-cartao" class="form-control" placeholder="MM/AAAA"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cvv-cartao" class="form-label">CVV</label>
+                                <input type="text" id="cvv-cartao" class="form-control" placeholder="CVV" required>
+                            </div>
+                        </div>
+
+                        <!-- QR Code para Pix -->
+                        <div id="form-pix" class="d-none">
+                            <h4>Pagamento via Pix</h4>
+                            <p>Escaneie o QR Code abaixo para realizar o pagamento via Pix:</p>
+                            <div id="qrcode"></div>
+                        </div>
+                    </div>
+
+                    <!-- Dados para Entrega -->
+                    <div class="col-md-6">
+                        <h3>Endereço</h3>
+                        <form>
+                            <select class="form-select my-2" aria-label="Default select example">
+                                <option selected>Selecione endereco</option>
+                                <option value="1">Rua XPTO - CEP 1234500</option>
+                                <option value="2">Rua HKSS - CEP 12340000</option>
+                                <option value="3">Rua Dr. Alb - CEP 20340050</option>
+                              </select>
+                        </form>
+                        <!-- Opção de Retirada ou Entrega -->
+                        <div class="mb-4">
+                            <h3>Escolha a Forma de Entrega</h3>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="retirada" name="entrega"
+                                    value="retirada">
+                                <label class="form-check-label" for="retirada">Retirar na loja</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="entrega" name="entrega"
+                                    value="entrega" checked>
+                                <label class="form-check-label" for="entrega">Receber em casa (Entrega)</label>
+                            </div>
+                        </div>
+
+                        <!-- Agendamento -->
+                        <div id="agendamento" class="d-none">
+                            <h3>Agende sua Retirada ou Entrega</h3>
+                            <div class="mb-3">
+                                <label for="data-agendamento" class="form-label">Escolha a Data</label>
+                                <input type="date" id="data-agendamento" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="hora-agendamento" class="form-label">Escolha a Hora</label>
+                                <input type="time" id="hora-agendamento" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Resumo da Compra -->
+                <div class="d-flex justify-content-between mt-5">
+                    <h4>Total da Compra:</h4>
+                    <p class="h4 fw-bold" id="total-compra">R$ 29,97</p>
+                </div>
+
+                <!-- Botões de Ação -->
+                <div class="d-flex justify-content-between mt-4">
+                    <a href="carrinho.html" class="btn btn-outline-secondary">Voltar ao Carrinho</a>
+                    <button type="submit" class="btn btn-primary">Finalizar Compra</button>
+                </div>
+            </div>
+        </section>
 
         <section id="login">
             <div class="container mt-5">
@@ -376,54 +558,6 @@
                 </div>
             </div>
 
-        </section>
-
-        <section id="contato" class="my-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Entre em Contato</h2>
-                <div class="row gy-4">
-                    <!-- Formulário de Contato -->
-                    <div class="col-md-6">
-                        <h3>Envie uma Mensagem</h3>
-                        <form>
-                            <div class="mb-3">
-                                <label for="nome" class="form-label">Nome</label>
-                                <input type="text" id="nome" class="form-control" placeholder="Digite seu nome"
-                                    required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email-contato" class="form-label">E-mail</label>
-                                <input type="email" id="email-contato" class="form-control"
-                                    placeholder="Digite seu e-mail" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="mensagem" class="form-label">Mensagem</label>
-                                <textarea id="mensagem" rows="5" class="form-control"
-                                    placeholder="Escreva sua mensagem"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                        </form>
-                    </div>
-
-                    <!-- Informações de Contato -->
-                    <div class="col-md-6">
-                        <h3>Informações de Contato</h3>
-                        <p class="mb-2"><strong>Endereço:</strong> Rua das Compras, 123, Centro, São Paulo - SP</p>
-                        <p class="mb-2"><strong>Telefone:</strong> (11) 1111-0000</p>
-                        <p class="mb-2"><strong>E-mail:</strong> contato@minimercado01.com.br</p>
-                        <p class="mb-2"><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 8h às 18h</p>
-                        <div class="mt-4">
-                            <h4>Siga-nos nas redes sociais:</h4>
-                            <a href="#" class="btn btn-outline-primary me-2">
-                                <i class="bi bi-facebook"></i> Facebook
-                            </a>
-                            <a href="#" class="btn btn-outline-danger">
-                                <i class="bi bi-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <section id="criar-conta" class="my-5">
@@ -537,6 +671,54 @@
                 </form>
             </div>
         </section>
+
+        <section id="contato" class="my-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Entre em Contato</h2>
+                <div class="row gy-4">
+                    <!-- Formulário de Contato -->
+                    <div class="col-md-6">
+                        <h3>Envie uma Mensagem</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" id="nome" class="form-control" placeholder="Digite seu nome"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email-contato" class="form-label">E-mail</label>
+                                <input type="email" id="email-contato" class="form-control"
+                                    placeholder="Digite seu e-mail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea id="mensagem" rows="5" class="form-control"
+                                    placeholder="Escreva sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                        </form>
+                    </div>
+
+                    <!-- Informações de Contato -->
+                    <div class="col-md-6">
+                        <h3>Informações de Contato</h3>
+                        <p class="mb-2"><strong>Endereço:</strong> Rua das Compras, 123, Centro, São Paulo - SP</p>
+                        <p class="mb-2"><strong>Telefone:</strong> (11) 1111-0000</p>
+                        <p class="mb-2"><strong>E-mail:</strong> contato@minimercado01.com.br</p>
+                        <p class="mb-2"><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 8h às 18h</p>
+                        <div class="mt-4">
+                            <h4>Siga-nos nas redes sociais:</h4>
+                            <a href="#" class="btn btn-outline-primary me-2">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                            <a href="#" class="btn btn-outline-danger">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <hr>
 
@@ -549,7 +731,7 @@
                     <p>Seu minimercado de confiança. Produtos de qualidade com praticidade para o seu dia a dia.</p>
                     <img src="assets/img/logo.svg" alt="Logo do MiniMercado" width="120">
                 </div>
-    
+
                 <!-- Coluna 2: Links Rápidos -->
                 <div class="col-md-3">
                     <h5 class="fw-bold">Links Rápidos</h5>
@@ -560,7 +742,7 @@
                         <li><a href="#login" class="text-decoration-none text-dark">Login</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Coluna 3: Contato -->
                 <div class="col-md-3">
                     <h5 class="fw-bold">Contato</h5>
@@ -568,7 +750,7 @@
                     <p><strong>Telefone:</strong> (11) 1111-0000</p>
                     <p><strong>Endereço:</strong> Rua do Comércio, 123 - Centro</p>
                 </div>
-    
+
                 <!-- Coluna 4: Redes Sociais -->
                 <div class="col-md-3">
                     <h5 class="fw-bold">Siga-nos</h5>
@@ -585,30 +767,33 @@
                     </div>
                 </div>
             </div>
-    
+
             <hr class="my-4">
-    
+
             <!-- Botão de Voltar ao Topo -->
             <div class="text-center">
                 <button class="btn btn-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
                     Voltar ao Topo
                 </button>
             </div>
-    
+
             <hr class="my-4">
-    
+
             <!-- Direitos Autorais -->
             <div class="text-center">
                 <p class="mb-0">MiniMercado 01 &copy; 2024. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-    
+
+    <!-- QRcode -->
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- OTHERS -->
     <script src="assets/js/slider-show.js"></script>
     <script src="assets/js/utils.js"></script>
+    <script src="assets/js/checkout.js"> </script>
 </body>
 
 </html>
