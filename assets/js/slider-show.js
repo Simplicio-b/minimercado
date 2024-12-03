@@ -38,5 +38,15 @@ function showSlides(n) {
 
 setInterval(() => {
     plusSlides(slideIndex)
-    // console.log("Delayed for 1 second.", slideIndex);
 }, 2400);
+
+// (function hiddenSlides() {
+//     const hidden = document.querySelector('slideshow-container')
+//     const hash = window.location.hash
+//     console.log('hiddenSlides')
+//     console.log(window.location.hash)
+
+//     if(hash !== "#produtos" || hash !== "#produtos") {
+//         console.log(hidden)
+//     }
+// })()
